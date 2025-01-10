@@ -19,9 +19,9 @@ const signup = async (req, res) => {
         console.log("checkpoint - 2");
         
 
-        let image = "https://avatar.iran.liara.run/public/boy" + name;
+        let image = `https://avatar.iran.liara.run/public/boy?name=${name}`;
         if (gender === "female") {
-            image = "https://avatar.iran.liara.run/public/girl" + name;
+            image = `https://avatar.iran.liara.run/public/girl?name=${name}`;
         }
 
         console.log("checkpoint - 3");
